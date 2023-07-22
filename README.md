@@ -1,4 +1,4 @@
-## tiny_invariant 🔬💥
+## 🔸 Tiny Invariant
 
 [![Build Status](https://travis-ci.org/alexreardon/tiny-invariant.svg?branch=master)](https://travis-ci.org/alexreardon/tiny-invariant)
 [![npm](https://img.shields.io/npm/v/tiny-invariant.svg)](https://www.npmjs.com/package/tiny-invariant) [![dependencies](https://david-dm.org/alexreardon/tiny-invariant.svg)](https://david-dm.org/alexreardon/tiny-invariant)
@@ -67,6 +67,6 @@ if (!condition) {
 }
 ```
 
-## Initial source 
+## Original implementation
 
-- [Implementation by Alexreardon](https://github.com/alexreardon/tiny-invariant)
+- [By alexreardon](https://github.com/alexreardon/tiny-invariant)
