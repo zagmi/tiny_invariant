@@ -45,7 +45,6 @@ invariant(condition, `Hello, ${name} - how are you today?`);
 ## Installation
 
 ```sh
-# pub
 dart pub add tiny_invariant
 ```
 ## Dropping your `message` for kb savings!
