@@ -1,10 +1,18 @@
 ## Tiny Invariant
 
-[![Build Status](https://travis-ci.org/alexreardon/tiny-invariant.svg?branch=master)](https://travis-ci.org/alexreardon/tiny-invariant)
-[![npm](https://img.shields.io/npm/v/tiny-invariant.svg)](https://www.npmjs.com/package/tiny-invariant) [![dependencies](https://david-dm.org/alexreardon/tiny-invariant.svg)](https://david-dm.org/alexreardon/tiny-invariant)
-![types](https://img.shields.io/badge/types-typescript%20%7C%20flow-blueviolet)
-[![minzip](https://img.shields.io/bundlephobia/minzip/tiny-invariant.svg)](https://www.npmjs.com/package/tiny-invariant)
-[![Downloads per month](https://img.shields.io/npm/dm/tiny-invariant.svg)](https://www.npmjs.com/package/tiny-invariant)
+<div style="display: flex; justify-content: center;">
+
+  <img src="https://img.shields.io/pub/v/tiny_invariant?color=green">
+
+  <img src="https://img.shields.io/pub/points/tiny_invariant">
+
+  <img src="https://img.shields.io/pub/popularity/tiny_invariant?color=green">
+
+  <img src="https://img.shields.io/badge/maintenance%20status-actively%20developed-brightgreen">
+
+  <img src="https://img.shields.io/badge/coverage-92%25-orange">
+
+</div>
 
 A tiny [`invariant`](https://www.npmjs.com/package/invariant) alternative in Dart.
 
