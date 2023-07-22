@@ -49,7 +49,7 @@ invariant(condition, `Hello, ${name} - how are you today?`);
 ## API: `(condition: T, message: String?)`
 
 - `condition` is required and can be anything
-- `message` optional `string` or a function that returns a `string` (`() => string`)
+- `message` optional `string` or a function that returns a `string`
 
 ## Installation
 
