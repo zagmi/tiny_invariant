@@ -13,6 +13,7 @@
   <img src="https://img.shields.io/badge/coverage-92%25-orange">
 
 </div>
+<br/>
 
 A tiny [`invariant`](https://www.npmjs.com/package/invariant) alternative in Dart.
 
