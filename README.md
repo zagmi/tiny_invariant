@@ -6,7 +6,7 @@
 [![minzip](https://img.shields.io/bundlephobia/minzip/tiny-invariant.svg)](https://www.npmjs.com/package/tiny-invariant)
 [![Downloads per month](https://img.shields.io/npm/dm/tiny-invariant.svg)](https://www.npmjs.com/package/tiny-invariant)
 
-A tiny [`invariant`](https://www.npmjs.com/package/invariant) alternative.
+A tiny [`invariant`](https://www.npmjs.com/package/invariant) alternative in Dart.
 
 ## What is `invariant`?
 
@@ -29,22 +29,12 @@ import 'package:tiny_invariant/tiny_invariant.dart';
 invariant(value, () => getExpensiveMessage());
 ```
 
-## Why `tiny-invariant`?
+## Why `tiny_invariant`?
 
-The [`library: invariant`](https://www.npmjs.com/package/invariant) supports passing in arguments to the `invariant` function in a sprintf style `(condition, format, a, b, c, d, e, f)`. It has internal logic to execute the sprintf substitutions. The sprintf logic is not removed in production builds. `tiny-invariant` has dropped all of the sprintf logic. `tiny-invariant` allows you to pass a single string message. With [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) there is really no need for a custom message formatter to be built into the library. If you need a multi part message you can just do this:
+The initial implementation from where I got the idea [`library: invariant`](https://www.npmjs.com/package/invariant) supports passing in arguments to the `invariant` function in a sprintf style `(condition, format, a, b, c, d, e, f)`. It has internal logic to execute the sprintf substitutions. The sprintf logic is not removed in production builds. `tiny_invariant` has dropped all of the sprintf logic. `tiny_invariant` allows you to pass a single string message. 
 
 ```dart
 invariant(condition, `Hello, ${name} - how are you today?`);
-```
-
-## Type narrowing
-
-`tiny-invariant` is useful for correctly narrowing types for `flow` and `typescript`
-
-```ts
-const value: Person | null = { name: 'Alex' }; // type of value == 'Person | null'
-invariant(value, 'Expected value to be a person');
-// type of value has been narrowed to 'Person'
 ```
 
 ## API: `(condition: T, message: String?)`
@@ -54,7 +44,7 @@ invariant(value, 'Expected value to be a person');
 
 ## Installation
 
-```bash
+```sh
 # pub
 dart pub add tiny_invariant
 ```
@@ -80,4 +70,4 @@ if (!condition) {
 
 ## Initial source 
 
-- [Alexreardon](https://github.com/alexreardon/tiny-invariant)
+- [Implementation by Alexreardon](https://github.com/alexreardon/tiny-invariant)
