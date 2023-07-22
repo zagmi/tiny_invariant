@@ -1,4 +1,4 @@
-library tiny_invariant
+library tiny_invariant;
 
 import 'package:dotenv/dotenv.dart' as dotenv;
 
