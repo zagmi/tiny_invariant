@@ -1,0 +1,11 @@
+name: tiny_invariant
+version: 1.0.0
+description: A tiny implementation of the invariant function in Dart.
+homepage: https://github.com/zagmi/tiny_invariant
+environment:
+  sdk: ">=2.14.0 <3.0.0"
+dependencies:
+  dotenv: ^3.1.0
+dev_dependencies:
+  pedantic: ^1.0.0
+  test: ^1.0.
