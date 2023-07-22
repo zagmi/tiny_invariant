@@ -1,19 +1,18 @@
 library tiny_invariant
 
-const bool _isProduction = bool.fromEnvironment('dart.vm.product');
+import 'package:dotenv/dotenv.dart' as dotenv;
+
 const String _prefix = 'Invariant failed';
 
-void invariant(bool condition, String message) {
-  assert(() {
-    if (!condition) {
-      final errorMessage = message != null ? '$_prefix: $message' : _prefix;
+void invariant(bool condition, [String message]) {
+  final isProduction = dotenv.env['APP_ENV'] == 'production';
+  
+  if (!condition) {
+    final errorMessage = message != null ? '$_prefix: $message' : _prefix;
+    if (isProduction) {
+      throw Error(errorMessage);
+    } else {
       throw AssertionError(errorMessage);
     }
-    return true;
-  }(), '');
-  
-  if (!_isProduction && message != null) {
-    final errorMessage = '$_prefix: $message';
-    throw AssertionError(errorMessage);
   }
 }
