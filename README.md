@@ -15,7 +15,7 @@
 </div>
 <br/>
 
-A tiny [`invariant`](https://www.npmjs.com/package/invariant) alternative in Dart.
+A tiny [`invariant`](https://pub.dev/packages/tiny_invariant) alternative in Dart.
 
 ## What is `invariant`?
 
