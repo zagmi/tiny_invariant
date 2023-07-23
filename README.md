@@ -75,7 +75,3 @@ if (!condition) {
   }
 }
 ```
-
-## Original implementation
-
-- [By alexreardon](https://github.com/alexreardon/tiny-invariant)
